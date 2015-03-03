@@ -1,3 +1,5 @@
+#This will be Artur Jonczyk version of this original project.
+
 ## How do I complete this project?
 
 1. Go to the [Javascript Basics course](https://www.udacity.com/course/ud804) and select "View Course Materials."
