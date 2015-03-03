@@ -37,4 +37,36 @@ var bio = {
 	}
 };
 
+var work = {
+	"jobs": [{
+		"employer": "Planet Express",
+		"title": "Delivery Boy",
+		"location": "Brooklyn, NY",
+		"dates": "January 3000 - Future",
+		"description": "Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Etiam porta sem malesuada magna mollis euismod. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor."
+	}, {
+		"employer": "Panucci's Pizza",
+		"title": "Delivery Boy",
+		"location": "Manhattan, NY",
+		"dates": "1998 - December 31, 1999",
+		"description": "Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum."
+	}],
+	"display": function() {
+		for (var job in work.jobs) {
+			var formattedWorkStart = HTMLworkStart;
+			var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+			var formattedJob = HTMLworkTitle.replace("%data%", work.jobs[job].title);
+			var formattedWorkDate = HTMLworkDates.replace("%data%", work.jobs[job].dates);
+			var formattedLocation = HTMLworkLocation.replace("%data%", work.jobs[job].location);
+			var formattedDescription = HTMLworkDescription.replace("%data%", work.jobs[job].description);
+			$("#workExperience").append(formattedWorkStart);
+			$(".work-entry:last").append(formattedEmployer + formattedJob);
+			$(".work-entry:last").append(formattedWorkDate);
+			$(".work-entry:last").append(formattedLocation);
+			$(".work-entry:last").append(formattedDescription);
+		}
+	}
+};
+
 bio.display();
+work.display();
