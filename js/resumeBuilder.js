@@ -73,12 +73,12 @@ var projects = {
 		"title": "Sample Project 1",
 		"dates": "2014",
 		"description": "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Cras mattis consectetur purus sit amet fermentum.",
-		"images": ["images/try-ios-banner_small.png", "images/core-ios-7-banner_small.png"]
+		"images": ["http://placehold.it/300x200", "http://placehold.it/300x200"]
 	}, {
 		"title": "Diferent Project 2",
 		"dates": "2013",
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Donec sed odio dui.",
-		"images": ["images/try-objective-c-banner_small.png", "images/try-ios-banner_small.png"]
+		"images": ["http://placehold.it/300x200", "http://placehold.it/300x200"]
 	}],
 	"display": function() {
 		for (var i in projects.projects) {
