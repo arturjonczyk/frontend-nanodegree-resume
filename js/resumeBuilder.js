@@ -80,8 +80,26 @@ var projects = {
 		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Nulla vitae elit libero, a pharetra augue. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Sed posuere consectetur est at lobortis. Donec sed odio dui.",
 		"images": ["images/try-objective-c-banner_small.png", "images/try-ios-banner_small.png"]
 	}],
+	"display": function() {
+		for (var i in projects.projects) {
+			var formattedProStart = HTMLprojectStart;
+			var formattedProTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+			var formattedProDate = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
+			var formattedProDesc = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+			var formattedProImages = "";
+			for (var image in projects.projects[i].images) {
+				formattedProImages += HTMLprojectImage.replace("%data%", projects.projects[i].images[image]);
+			}
+			$("#projects").append(formattedProStart);
+			$(".project-entry:last").append(formattedProTitle);
+			$(".project-entry:last").append(formattedProDate);
+			$(".project-entry:last").append(formattedProDesc);
+			$(".project-entry:last").append(formattedProImages);
+		}
+	}
 };
 
 
 bio.display();
 work.display();
+projects.display();
