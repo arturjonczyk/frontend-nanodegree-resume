@@ -99,7 +99,57 @@ var projects = {
 	}
 };
 
+var education = {
+	"schools": [{
+		"name": "Nova Southeastern University",
+		"location": "Fort Lauderdale, FL",
+		"degree": "Master",
+		"majors": ["CS"],
+		"dates": 2013,
+		"url": "http://southeasternuniversity.org"
+	}, {
+		"name": "Eckerd College",
+		"location": "Saint Petersburg, FL",
+		"degree": "BA",
+		"majors": ["CS"],
+		"dates": 2003,
+		"url": "http://eckerdcollege.org"
+	}],
+	"onlineCourses": [{
+		"title": "JavaScript Basics",
+		"school": "Udacity",
+		"dates": 2015,
+		"url": "https://www.udacity.com/course/ud804"
+	}],
+	"display": function() {
+		$("#education").append(HTMLschoolStart);
+		for (var school in education.schools) {
+			var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
+			var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
+			var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
+			var formattedDate = HTMLschoolDates.replace("%data%", education.schools[school].dates);
+			var formattedMajor = HTMLschoolMajor.replace("%data%", education.schools[school].majors);
+			$(".education-entry:last").append(formattedName + formattedDegree);
+			$(".education-entry:last").append(formattedDate);
+			$(".education-entry:last").append(formattedLocation);
+			$(".education-entry:last").append(formattedMajor);
+		}
+
+		$("#education").append(HTMLonlineClasses);
+		$("#education").append(HTMLschoolStart);
+		for (var course in education.onlineCourses) {
+			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
+			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
+			var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+			var formattedUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
+			$(".education-entry:last").append(formattedTitle + formattedSchool);
+			$(".education-entry:last").append(formattedDate);
+			$(".education-entry:last").append(formattedUrl);
+		}
+	}
+};
 
 bio.display();
 work.display();
 projects.display();
+education.display();
