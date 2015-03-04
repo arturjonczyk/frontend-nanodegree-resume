@@ -10,7 +10,7 @@ var bio = {
 	},
 	"welcomeMessage": "I'm really glad to see you...",
 	"skills": ["easy going", "happy person", "always positive", "saving the universe"],
-	"biopic": "../images/fry.jpg",
+	"biopic": "images/fry.jpg",
 	"display": function() {
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
 		var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -20,7 +20,7 @@ var bio = {
 			formattedContacts = formattedContacts.replace("%data%", bio.contacts[contact]);
 		}
 		var formattedPic = HTMLbioPic.replace("%data%", bio.biopic);
-		var formattedWelcomeMsg = HTMLWelcomeMsg.replace("%data%", bio.welcomeMessage);
+		var formattedWelcomeMsg = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
 		var formattedSkillsStart = HTMLskillsStart;
 		var formattedSkillsSet = "";
 		for (var skill in bio.skills) {
