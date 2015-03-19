@@ -122,8 +122,8 @@ var education = {
 		"url": "https://www.udacity.com/course/ud804"
 	}],
 	"display": function() {
-		$("#education").append(HTMLschoolStart);
 		for (var school in education.schools) {
+			$("#education").append(HTMLschoolStart);
 			var formattedName = HTMLschoolName.replace("%data%", education.schools[school].name);
 			var formattedDegree = HTMLschoolDegree.replace("%data%", education.schools[school].degree);
 			var formattedLocation = HTMLschoolLocation.replace("%data%", education.schools[school].location);
@@ -136,8 +136,8 @@ var education = {
 		}
 
 		$("#education").append(HTMLonlineClasses);
-		$("#education").append(HTMLschoolStart);
 		for (var course in education.onlineCourses) {
+			$("#education").append(HTMLschoolStart);
 			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
 			var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
