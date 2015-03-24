@@ -213,3 +213,9 @@ span {
     display: block;
   }
 }
+
+/**** My custom style improvements *****/
+/* Skills display*/
+#skills.flex-box {
+  flex-direction: column;
+}
