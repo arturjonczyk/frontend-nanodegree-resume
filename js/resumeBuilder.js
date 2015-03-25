@@ -78,10 +78,10 @@ var education = {
 			$("#education").append(HTMLschoolStart);
 			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-			var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].date);
+			var formattedOnlineDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].date);
 			var formattedUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
 			$(".education-entry:last").append(formattedTitle + formattedSchool);
-			$(".education-entry:last").append(formattedDate);
+			$(".education-entry:last").append(formattedOnlineDate);
 			$(".education-entry:last").append(formattedUrl);
 		}
 	}
