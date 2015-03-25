@@ -56,7 +56,7 @@ var education = {
 	"onlineCourses": [{
 		"title": "JavaScript Basics",
 		"school": "Udacity",
-		"dates": 2015,
+		"date": 2015,
 		"url": "https://www.udacity.com/course/ud804"
 	}],
 	"display": function() {
@@ -78,7 +78,7 @@ var education = {
 			$("#education").append(HTMLschoolStart);
 			var formattedTitle = HTMLonlineTitle.replace("%data%", education.onlineCourses[course].title);
 			var formattedSchool = HTMLonlineSchool.replace("%data%", education.onlineCourses[course].school);
-			var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].dates);
+			var formattedDate = HTMLonlineDates.replace("%data%", education.onlineCourses[course].date);
 			var formattedUrl = HTMLonlineURL.replace("%data%", education.onlineCourses[course].url);
 			$(".education-entry:last").append(formattedTitle + formattedSchool);
 			$(".education-entry:last").append(formattedDate);
