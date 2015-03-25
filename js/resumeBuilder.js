@@ -149,14 +149,14 @@ var projects = {
 	}
 };
 
-
-
-var addMap = function() {
-	$("#mapDiv").append(googleMap);
+var mainMap = {
+	display: function() {
+		$("#mapDiv").append(googleMap);
+	}
 };
 
 bio.display();
 work.display();
 projects.display();
 education.display();
-addMap();
+mainMap.display();
