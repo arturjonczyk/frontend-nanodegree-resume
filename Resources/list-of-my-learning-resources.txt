@@ -1,0 +1,15 @@
+Lynda:
+JavaScript Essential Training - http://www.lynda.com/JavaScript-tutorials/JavaScript-Essential-Training/81266-2.html
+JavaScript: Enhancing the DOM - http://www.lynda.com/HTML-tutorials/JavaScript-Enhancing-DOM/122462-2.html
+JavaScript: Events - http://www.lynda.com/JavaScript-tutorials/JavaScript-Events/140780-2.html
+JavaScript: Functions - http://www.lynda.com/JavaScript-tutorials/JavaScript-Functions/148137-2.html
+
+Books:
+JavaScript and JQuery: Interactive Front-End Web Development - http://www.amazon.com/JavaScript-JQuery-Interactive-Front-End-Development/dp/1118531647/ref=sr_1_2?ie=UTF8&qid=1427285236&sr=8-2&keywords=javascript
+
+Youtube:
+Introduction to the Google Maps API - https://www.youtube.com/watch?v=ZE8ODPL2VPI&list=PLotxyvftiqxgMI8R-XTg3jn7ycPDKVsnD&index=2
+Others:
+https://developer.mozilla.org/
+http://api.jquery.com/
+https://developers.google.com/maps/documentation/javascript/tutorial
